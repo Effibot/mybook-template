@@ -1,0 +1,77 @@
+\chapter{Introduction}
+\begin{introduction}
+\item hello intro
+\end{introduction}
+0123456789\newline Your introduction goes here! Simply start writing your document and use the Recompile button to view the updated PDF preview. Examples of commonly used commands and features are listed below, to help you get started.
+
+Once you're familiar with the editor, you can find various project setting in the Overleaf menu, accessed via the button in the very top left of the editor. To view tutorials, user guides, and further documentation, please visit our \href{https://www.overleaf.com/learn}{help library}, or head to our plans page to \href{https://www.overleaf.com/user/subscription/plans}{choose your plan}.
+\begin{theorem}[thm1]\label{thm:teo1}
+\begin{assumption}[hello]
+world
+\end{assumption}
+\begin{equation}
+    \left\{\begin{aligned}
+        V_{k}(x_{k})&=\underset{u_{k}\in U_{k}}{\min}\{
+            g_{k}(x_{k},u_{k})+V_{k+1}(f(x_{k},u_{k}))\},\;
+            \forall x_{k}\in X,\;k=\{0,1,\dots,N-1\}\\
+        V_{N}(x_N)&=g_{N}(x_N),\;\forall x_{N}\in X
+    \end{aligned}
+    \right.
+\end{equation}
+\end{theorem}
+\begin{definition}[def 1]
+aaaa
+\end{definition}
+\begin{problem}[prob]
+
+\end{problem}
+\begin{corollary}[coro1]
+
+\end{corollary}
+\begin{proof}[kkk]
+
+\end{proof}
+\begin{property}[prop1]
+aaaaa
+\end{property}
+
+
+\begin{example}[aaa]aaa
+
+\end{example}aaaaaaa
+\begin{exercise}[aaa]aa
+
+\end{exercise}
+\begin{remark}
+Simply use the section and subsection commands, as in this example document! With Overleaf, all the formatting and numbering is handled automatically according to the template you've chosen. If you're using Rich Text mode, you can also create new section and subsections via the buttons in the editor toolbar.
+Simply use the section and subsection commands, as in this example document! With Overleaf, all the formatting and numbering is handled automatically according to the template you've chosen. If you're using Rich Text mode, you can also create new section and subsections via the buttons in the editor toolbar.
+\end{remark}aaa
+\section{Section}
+
+\subsection{Subsection}
+hello subsection
+\chapter{How to include Figures}
+\section{test}
+First you have to upload the image file from your computer using the upload link in the file-tree menu. Then use the includegraphics command to include it in your document. Use the figure environment and the caption command to add a number and a caption to your figure. See the code for Figure \cref{fig:logo} in this section for an example.
+
+Note that your figure will automatically be placed in the most appropriate place for it, given the surrounding text and taking into account other figures or tables that may be close by. You can find out more about adding images to your documents in this help article on \href{https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf}{including images on Overleaf}.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.3\textwidth]{image/logouni.png}
+\caption{\label{fig:logo}sample.}
+\end{figure}
+
+\subsection{How to add Tables}
+
+Use the table and tabular environments for basic tables --- see Table~\cref{tab:widgets}, for example. For more information, please see this help article on \href{https://www.overleaf.com/learn/latex/tables}{tables}. 
+
+\begin{table}[h]
+\centering
+\begin{tabular}{l|r}
+Item & Quantity \\\hline
+Widgets & 42 \\
+Gadgets & 13
+\end{tabular}
+\caption{\label{tab:widgets}An example table.}
+\end{table}
