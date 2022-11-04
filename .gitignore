@@ -274,3 +274,11 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
+# Ignore everything
+/*
+# Exceptions
+!.gitignore
+!LICENSE
+!README.md
+!.devcontainer/
+!.vscode/

@@ -1,0 +1,27 @@
+# LaTeX environment container specification.
+
+version: "3.9"
+
+services:
+  docktex:
+    build:
+      context: .
+      network: host
+      dockerfile: Dockerfile
+    image: docktex
+    network_mode: host
+    environment:
+      TERM: xterm-256color
+      DISPLAY:
+      SHELL: /usr/bin/zsh
+    user: docktex
+    stdin_open: false
+    tty: true
+    working_dir: /home/docktex/workspace
+    command: ["/bin/bash", "-c", "trap 'exit 0' TERM; sleep infinity & wait"]
+    volumes:
+      - ~/.Xauthority:/home/docktex/.Xauthority:rw
+      - ~/.ssh:/home/docktex/.ssh
+      - ~/.gitconfig:/home/docktex/.gitconfig
+      - /etc/localtime:/etc/localtime:ro
+      - ../:/home/docktex/workspace
