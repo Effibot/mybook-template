@@ -274,8 +274,7 @@ TSWLatexianTemp*
 
 # Makeindex log files
 *.lpz
-# Ignore everything
-/*
+
 # Exceptions
 !.gitignore
 !LICENSE
