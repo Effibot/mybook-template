@@ -120,5 +120,6 @@ unalias rm
 [[ ! -f ~/.aliases.sh ]] || source $HOME/.aliases.sh
 [[ ! -f ~/.ros2_cmds.sh ]] || source $HOME/.ros2_cmds.sh
 [[ ! -f ~/.stanis_aliases.sh ]] || source ~/.stanis_aliases.sh
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
